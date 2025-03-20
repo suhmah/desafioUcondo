@@ -61,6 +61,7 @@ const RenderComponentItem = ({ item, accounts, setAccounts }: IProps) => {
         visible={showModal}
         message={item.code}
         onCancel={handlers?.handleCancelDelete}
+        onConfirm={handlers?.handleConfirmDelete}
       />
     </Card>
   );

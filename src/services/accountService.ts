@@ -122,7 +122,6 @@ export const deleteAccount = (
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>,
 ): DeleteAccountHandlers => {
   const accountToDelete = accounts.find(acc => acc.code === code);
-  
   if (!accountToDelete) {
     setShowModal(true);
     return { handleConfirmDelete: async () => {}, handleCancelDelete: () => {} };
